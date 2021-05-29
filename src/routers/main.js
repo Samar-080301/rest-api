@@ -20,6 +20,7 @@ router.get('/',async (req, res) =>{
    
    //specific
    //eg. http://127.0.0.1:100/api/60b27db99764846700e85283 i.e. the _id in db
+   //req.query can be used to add query in inputs
    router.get('/api/:id',async (req, res) =>{
        try{
            const _id = req.params.id;
