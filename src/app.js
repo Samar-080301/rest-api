@@ -19,7 +19,7 @@ app.post('/api',async (req, res) =>{
         const addingSellersData = new SellersData(req.body)
         console.log(req.body);
         const insertSellers = await addingSellersData.save();
-        res.staus(201).send(insertSellers);
+        res.status(201).send(insertSellers);
     }
     catch(e){
         res.status(400).send(e);
